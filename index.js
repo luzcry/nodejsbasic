@@ -1,8 +1,5 @@
-const math = require('./math.js');
+const os = require('os');
 
-console.log(math.add(3, 2));
-console.log(math.substract(3, 2));
-console.log(math.divide(3, 2));
-console.log(math.multiply(3, 2));
-
-//los modulos son archivos de la aplicacion que se puede dividir para tener separado todo
+console.log(os.platform());
+console.log(os.release());
+console.log("free mem", os.freemem());

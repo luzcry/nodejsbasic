@@ -1,36 +1,7 @@
-//para exportar crear objeto
+const os = require("os");
+//metodo de node
+console.log(os.platform());
+console.log(os.release());
+console.log("free mem", os.freemem());
 
-const Math = {};
-
-function add(x1, x2) {
-    return x1 + x2;
-};
-
-function substract(x1, x2) {
-    return x1 - x2;
-};
-
-function multiply(x1, x2) {
-    return x1 * x2;
-};
-
-function divide(x1, x2) {
-    if (x2 == 0) {
-        console.log('no se puede dividir por 0')
-    } else {
-        return x1 / x2;
-    }
-};
-/*exports.add = add;
-exports.substract = substract;
-exports.divide = divide;
-exports.multiply = multiply;*/
-
-//agregando funciones al objeto
-Math.add = add;
-Math.substract = substract;
-Math.multiply = multiply;
-Math.divide = divide;
-
-//exportar objeto
-module.exports = Math;
+module.exports = math;
